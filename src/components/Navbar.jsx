@@ -5,7 +5,6 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook, FaMailBulk } from 're
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/a (5).png' //importing logo
-import Resume from '../assets/PayamPartow-resume.pdf' //importing resume pdf file
 import { Link } from 'react-scroll'
 
 
@@ -68,6 +67,12 @@ const Navbar = () => {
                     </Link>
                 </li>
 
+                <li>
+                <   Link  to="work"  smooth={true}  duration={500} >
+                    Projects
+                    </Link>
+                </li>
+               
                 <li>
                 <   Link  to="work"  smooth={true}  duration={500} >
                     Work
