@@ -68,7 +68,7 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                <   Link  to="work"  smooth={true}  duration={500} >
+                <   Link  to="projects"  smooth={true}  duration={500} >
                     Projects
                     </Link>
                 </li>
@@ -103,11 +103,31 @@ const Navbar = () => {
         <ul className={!nav ? 'hidden' : ' absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center '}>      
                 {/* py-6 is padding of 1.5 rim on the y axis top and bottom  */}
                 {/* text-4xl makes the text bigger */}
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Work</li>
-                <li className='py-6 text-4xl'>Contact</li>
+                <li className='py-6 text-4xl'>
+                <   Link  to="home"  smooth={true}  duration={500} onClick={handleClick} >
+                        Home
+                        </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                <   Link  to="about"  smooth={true}  duration={500} onClick={handleClick} >
+                        About
+                        </Link>
+                </li>
+                <li className='py-6 text-4xl' >
+                    <   Link  to="skills"  smooth={true}  duration={500} onClick={handleClick} >
+                        Skills
+                        </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <   Link  to="work"  smooth={true}  duration={500} onClick={handleClick} >
+                        Work
+                        </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                <   Link  to="contact"  smooth={true}  duration={500} onClick={handleClick} >
+                        Contact
+                        </Link>
+                </li>
         </ul>
 
 
