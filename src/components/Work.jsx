@@ -81,7 +81,8 @@ const Work = () => {
                 longContent2="Conducted network connections for desktops and printers."
                 longContent3="Troubleshot to determine and resolve the root cause of hardware or
                 software malfunctions."
-                longContent4="Approached challenges with a solution-oriented mindset and curiosity"/>
+                longContent4="Approached challenges with a solution-oriented mindset and curiosity"
+                />
                 </div>
             </li>
         

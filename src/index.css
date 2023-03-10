@@ -32,7 +32,8 @@
 /* styling for when we hover on the work projects makes the bg purple  */
 /* need to add the important tag  so react doesn't neglect the styling that we created here */
 .content-div:hover{
-    background-image: linear-gradient(
+    background-image:
+     linear-gradient(
         to right,
         rgba(112, 157, 255, 0.8),
         hsla(242, 74%, 61%, 0.8)
