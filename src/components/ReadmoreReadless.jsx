@@ -4,10 +4,10 @@ import "../index.css";
 const ReadmoreReadless = ({shortContent, longContent, longContent2, longContent3, longContent4}) => {
     const [collapse, setCollapse] = useState(false);
   return (
-    <div class = "mt-2 mb-5 ">
+    <div class = "mt-2 mb-5">
     {shortContent}
     
-        <span className={`long-text ${collapse ? "expanded" : ""}`} >
+        <span className={`long-text ${collapse ? "expanded" : ""}`} class='mr-10'>
             <ul class="marker:text-white ">
                 <li>{longContent}</li>
                 <li>{longContent2}</li>
@@ -19,7 +19,8 @@ const ReadmoreReadless = ({shortContent, longContent, longContent2, longContent3
         </span>
         <button
                     type="button"
-                    class="inline-block rounded bg-primary px-4 pt-[6px] pb-[5px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 
+                    class="py-2 mt-2 flex items-end  rounded bg-primary px-4 pt-[6px] pb-[5px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 
+                    
                     hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] 
                     focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] 
                     focus:outline-none focus:ring-0 active:bg-primary-700 

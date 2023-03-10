@@ -45,7 +45,7 @@ const Skills = () => {
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     {/* mx-auto auto adjusts the icon in the center */}
-                    <img className='w-20 mx-auto' src={Python} alt="Python icon"/>text-white
+                    <img className='w-20 mx-auto' src={Python} alt="Python icon"/>
                     <p>Python</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
