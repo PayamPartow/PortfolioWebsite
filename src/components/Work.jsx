@@ -1,5 +1,6 @@
 import React, { useState }  from 'react'
-// import WorkImg from '../assets/projects/workImg.jpeg'
+import StemCell from '../assets/StemCell.png'
+import MarkAnthony from '../assets/MarkAnthony.png'
 // import realEstate from '../assets/projects/realestate.jpg'
 import ReadmoreReadless from './ReadmoreReadless';
 
@@ -24,7 +25,12 @@ const Work = () => {
                 <div class="flex-start flex items-center">
                 <div
                     class="-ml-[9px] mr-3 -mt-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary dark:bg-primary-500"></div>
+                
                 <h4 class="-mt-2 text-xl font-semibold inline border-b-4 border-pink-600">Help Desk Technician | Mark Anthony Group</h4>
+                <div className='w-60 mx-auto'>
+                    <img  src={StemCell} alt="Stem Cell Logo"/>
+                </div>
+                
                 </div>
                 <div class="ml-6 mb-6 pb-6">
                 <a
@@ -65,6 +71,9 @@ const Work = () => {
                 <div
                     class="-ml-[9px] mr-3 -mt-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary dark:bg-primary-500"></div>
                 <h4 class="-mt-2 text-xl font-semibold inline border-b-4 border-pink-600">Technical Service Representative | Stem Cell Technologies </h4>
+                <div className='w-80 mx-auto'>
+                    <img  src={MarkAnthony} alt="Mark Anthony Group Logo"/>
+                </div>
                 </div>
                 <div class="ml-6 mb-6 pb-6">
                 <a

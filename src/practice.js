@@ -140,16 +140,81 @@
 
 // write a function that moves elements in an array 
 
-function move(array, index, offset){
+// function move(array, index, offset){
     
-    if(position >= array.length || position<0) {
-        console.error("invalid offset");
-        return;
+//     if(position >= array.length || position<0) {
+//         console.error("invalid offset");
+//         return;
+//     }
+//     position = index+offset;
+//     const output = [...array];
+//     const element = output.splice(index, 1)[0]; //splice returns an array object with all the deleted elements
+//     output.splice(position, 0 , element); //when adding using splice the element will go before the right before the starting index
+//     return output;
+// }
+// console.log(move([1,2,3,4,5,6], 2, 2));
+
+
+
+//write a function that counts the number of occurances of a given element in an array
+
+// //method 1 
+// function countOccurrences(array, searchElements){
+//     count = 0;
+//     for (element of array){
+//         if(element === searchElements) count++;
+        
+//     }
+//     return count;
+// }
+
+// console.log(countOccurrences([1,2,3,1,4,5,1,6,1], 1));
+
+//method 2: using reducing an Array
+
+// function countOccurrences(array, searchElements){
+//     //note we need to return the array.reduce in the end 
+//    return array.reduce((accumulator, currentValue) =>{
+//     const occurance = (currentValue === searchElements) ? 1 : 0;
+//     return accumulator + occurance;
+//     },0);    
+// }
+
+// console.log(countOccurrences([1,2,3,1,4,5,1,6,1], 1));
+
+//function that finds the largest number in an array
+
+//method1 using sort 
+// function getMax(array){
+//     if(array.length === 0) return undefined;
+//     const sortedArray = array.sort();
+//     return sortedArray[(sortedArray.length)-1];
+
+// }
+
+// console.log(getMax([1,2,3,1,4,5,1,6,1]));
+
+//method2: 
+
+// function getMax(array){
+//     if(array.length === 0) return undefined;
+//     let max = array[0];
+//     for(element of array){
+//         if(element>max) max = element;
+
+//     }
+//     return max;
+// }
+// console.log(getMax([1,2,3,1,4,5,1,6,1]));
+
+
+
+//method 3: using reducing an array method
+
+function getMax(array){
+        if(array.length === 0) return undefined;
+        return array.reduce((accumalator, current)=>(current>accumalator) ? current : accumalator);
+        
     }
-    position = index+offset;
-    const output = [...array];
-    const element = output.splice(index, 1)[0]; //splice returns an array object with all the deleted elements
-    output.splice(position, 0 , element); //when adding using splice the element will go before the right before the starting index
-    return output;
-}
-console.log(move([1,2,3,4,5,6], 2, 2));
+
+    console.log(getMax([1,2,3,1,10,4,5,1,6,1]));
