@@ -1,6 +1,6 @@
 import React from 'react'
-import Remedi from '../assets/projects/Capture.PNG'
-import Swivel from '../assets/projects/Swivel.PNG'
+import Remedi from '../assets/Remedi.jpg'
+import Swivel from '../assets/Swivel.jpg'
 
 const Projects = () => {
 
@@ -9,9 +9,9 @@ const Projects = () => {
     if (newWindow) newWindow.opener = null
   }
   return (
-    <div name= 'projects' className='w-full h-screen text-white bg-[#0a192f]'>
+    <div name= 'projects' className='w-full h-screen text-white bg-[#0a192f] '>
       <div className='max-w-w[1000px] mx-auto p-12 flex flex-col justify-center w-full h-full'>
-    <div className='pb-8'>
+    <div className='pb-1'>
         <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Projects</p>
         <p className='py-6'>//Check out some of my recent Projects</p>
     </div>
