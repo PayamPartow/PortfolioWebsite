@@ -39,21 +39,21 @@ const Work = () => {
                     >Apr, 21 – Dec, 21</a
                 >
                 <ReadmoreReadless class="mt-8 mb-4 text-white dark:text-neutral-300 list-disk" 
-                shortContent="Proficiently managed user accounts, security groups, and domain
+                shortContent="1. Proficiently managed user accounts, security groups, and domain
                 policies in Active Directory to ensure efficient network authentication
                 and authorization."
                 
-                longContent="Supported internal employees, with accounts and computer problems
+                longContent="2. Supported internal employees, with accounts and computer problems
                 using ticketing software, Service-Now to document the issues and
                 ensure all notes are properly and efficiently filled out with detail."
                 
-                longContent2="Supported internal employees, with accounts and computer problems
+                longContent2="3. Supported internal employees, with accounts and computer problems
                 using ticketing software, Service-Now to document the issues and
                 ensure all notes are properly and efficiently filled out with detail."
-                longContent3="Implemented Dynamics 365 CRM software, and carried out IT duties
+                longContent3="4. Implemented Dynamics 365 CRM software, and carried out IT duties
                 including setting permissions for users, creating reports, and
                 importing data into the software"
-                longContent4="Repaired computer hardware in the case of a workstation failure, and
+                longContent4="5. Repaired computer hardware in the case of a workstation failure, and
                 used software diagnostic tools and scripts to monitor client health
                 with system center configuration manager (SCCM)"/>
                     
@@ -82,15 +82,15 @@ const Work = () => {
                     >Jul, 18 – Dec, 18</a
                 >
                 <ReadmoreReadless class="mt-2 mb-4 text-white dark:text-neutral-300 list-disk" 
-                shortContent="Deployed desktops and peripherals, following deployment
+                shortContent="1. Deployed desktops and peripherals, following deployment
                 documentation and checklists."
                 
-                longContent="Upgraded hardware and/or software on existing equipment."
+                longContent="2. Upgraded hardware and/or software on existing equipment."
                 
-                longContent2="Conducted network connections for desktops and printers."
-                longContent3="Troubleshot to determine and resolve the root cause of hardware or
+                longContent2="3. Conducted network connections for desktops and printers."
+                longContent3="4. Troubleshot to determine and resolve the root cause of hardware or
                 software malfunctions."
-                longContent4="Approached challenges with a solution-oriented mindset and curiosity"
+                longContent4="5. Approached challenges with a solution-oriented mindset and curiosity"
                 />
                 </div>
             </li>
