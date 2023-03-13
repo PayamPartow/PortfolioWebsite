@@ -16,7 +16,7 @@ import ReadmoreReadless from './ReadmoreReadless';
 const Work = () => {
     
   return (
-    <div name= 'work' className='w-full h-screen text-white bg-[#0a192f]'>
+    <div name= 'work' className='w-full md:h-screen text-white bg-[#0a192f]'>
         <div className='max-w-w[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8 ml-10'>
             <p className='text-4xl font-bold ml-10 inline border-b-4 text-gray-300 border-pink-600'>Work</p>
@@ -38,7 +38,7 @@ const Work = () => {
                     class="text-sm text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                     >Apr, 21 – Dec, 21</a
                 >
-                <ReadmoreReadless class="mt-2 mb-4 text-white dark:text-neutral-300 list-disk" 
+                <ReadmoreReadless class="mt-8 mb-4 text-white dark:text-neutral-300 list-disk" 
                 shortContent="Proficiently managed user accounts, security groups, and domain
                 policies in Active Directory to ensure efficient network authentication
                 and authorization."
