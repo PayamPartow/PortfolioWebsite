@@ -20,8 +20,8 @@ const Home = () => {
             <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] '> I'm a Computer Engineering new Grad from Simon Fraser University </h2>
             {/* py-4 is padding from the text above it on the y axis */}
             {/* max-w-[700px] makes the max width of our text to not go over width of 700px for when we make the screen larger */}
-            <p className='text-[#8892b0] py-4 max-w-[700px]'>I have substantial experience in mobile software development , full-stack web applications 
-                and embedded hardware Programming</p>
+            <p className='text-[#8892b0] py-4 max-w-[700px]'>I have substantial experience in mobile software development, full-stack web applications 
+                and embedded hardware programming</p>
             <div>
                 {/* border-2 gives us a border around the button */}
                 {/*  px-6 py-2 my-2 add padding and margin for the border */}

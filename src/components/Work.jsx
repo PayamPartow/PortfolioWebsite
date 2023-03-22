@@ -19,7 +19,7 @@ const Work = () => {
     <div name= 'work' className='w-full md:h-screen text-white bg-[#0a192f]'>
         <div className='max-w-w[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8 ml-10'>
-            <p className='text-4xl font-bold ml-10 inline border-b-4 text-gray-300 border-pink-600'>Work</p>
+            <p className='text-4xl font-bold ml-10 inline border-b-4 text-gray-300 border-pink-600'>Work Experience:</p>
                     <ol class="mx-auto py-12 border-l-2 border-inherit border-white">
             <li>
                 <div class="flex-start flex items-center">

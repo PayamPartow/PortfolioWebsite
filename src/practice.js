@@ -4,10 +4,12 @@
 //     ZipCode: 'v7r2l5'
 // };
 
+
 // function showAddress(address){
 //     for (let key in address)
 //     console.log(key, address[key]);
 // }
+
 
 
 //creating object using factory function
@@ -39,7 +41,6 @@
 // showAddress(address2);
 
 
-
 //function that tells us if the two object are equal. 
 //note that we can't just say obj1 === obj2 
 //since they are reference type and are pointing to different locations in memory even if they have same key value pairs
@@ -53,6 +54,8 @@
 // console.log(areEqual(address1, address2));
 
 
+
+
 // //function that determines if object1 and object2 are pointing to the same object
 // function isSame(obj1, obj2){
 //     return obj1 === obj2;
@@ -60,6 +63,16 @@
 // };
 
 // console.log(isSame(address1, address2));
+
+
+
+
+
+
+
+
+
+
 
 
 // //create a blog post object 
@@ -101,6 +114,14 @@
 // ];
 
 
+
+
+
+
+
+
+
+
 //write a function that creates an array with a given range of numbers
 
 // function arrayFromRange(min, max){
@@ -115,6 +136,14 @@
 // console.log(numbers);
 
 
+
+
+
+
+
+
+
+
 // write a function called includes that searches for an element in array and returns true if it exists in the array 
 
 // function includes(array, searchElement){
@@ -124,6 +153,15 @@
 //     };
 // }
 // console.log(includes([1,2],3));
+
+
+
+
+
+
+
+
+
 
 
 //write a function called except that removes all the occurances of a certain element in our array
@@ -136,6 +174,13 @@
 //     return output;
 // };
 // console.log(except([1,2,1,3,4,5,6], [1,2,3]));
+
+
+
+
+
+
+
 
 
 // write a function that moves elements in an array 
@@ -153,6 +198,22 @@
 //     return output;
 // }
 // console.log(move([1,2,3,4,5,6], 2, 2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,6 +242,26 @@
 // }
 
 // console.log(countOccurrences([1,2,3,1,4,5,1,6,1], 1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //function that finds the largest number in an array
 
@@ -211,10 +292,150 @@
 
 //method 3: using reducing an array method
 
-function getMax(array){
-        if(array.length === 0) return undefined;
-        return array.reduce((accumalator, current)=>(current>accumalator) ? current : accumalator);
+// function getMax(array){
+//         if(array.length === 0) return undefined;
+//         return array.reduce((accumalator, current)=>(current>accumalator) ? current : accumalator);
         
-    }
+//     }
 
-    console.log(getMax([1,2,3,1,10,4,5,1,6,1]));
+//     console.log(getMax([1,2,3,1,10,4,5,1,6,1]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// exercise 7: Movies
+
+// const movies = [
+//     {title: 'a', year: 2018, rating: 4.5},
+//     {title: 'b', year: 2018, rating: 4.7},
+//     {title: 'c', year: 2018, rating: 3},
+//     {title: 'd', year: 2017, rating: 4.5}
+// ]
+
+// //get all the movies in 2018 with rating > 4
+// // Sort them by their rating
+// //Descending order
+// //pick their title and view them
+
+// let titles = movies
+//     .filter(obj => obj.year === 2018 && obj.rating >= 4)
+
+//     // if the result becomes negative then its its like returning -1 switchh wont happen
+//     //if the result becomes 0 or positive then its like returning 0 or 1 so the switch will happen
+//     .sort((a,b)=> a.rating - b.rating ) 
+//     .reverse()
+//      //to only get the title we map the objects in the array to an array of their titles only
+//      .map(m => m.title);
+// console.log(titles);
+
+// // noob way of making a list of only the titles
+// // for (object of titles) console.log(object.title) ;
+
+
+// //definition of Hoisting in JavaScript : 
+// // its the process of movies all the finction declarations to the top during run time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //Functions EX1 : create a function that takes any number of arguments and returns their sum
+// // then modify that function to be able to take an array of arguments as well and return their sum
+
+// function sum(...arg){
+//     // note that arg itself is an array of values due to using the rest operator
+//     //so we would have to check and see if the first item in the array is itself another array 
+//     if (arg.length === 1  && Array.isArray(arg[0])){
+//         // return arg[0].reduce((a,b)=> (a+b));
+
+//         // better solution is to copy that array into out array of arg using spread operation
+//         arg = [...arg[0]];
+//     }
+
+//     return arg.reduce((a,b)=> (a+b));
+// }
+
+// console.log(sum([1,2,3,4,5]));
+
+
+
+
+
+
+
+
+
+
+// //ex2: create a circle object where we can set the radius from outside of the object but only read the radius object
+
+// const circle = {
+//     radius : 2,
+//     get area(){
+//         return Math.PI * this.radius * this.radius;
+//     }
+// }
+
+// console.log(circle.area);
+
+// circle.radius = 20;
+
+// console.log(circle.radius);
+
+
+
+
+
+//ex3: 
+
+try{const numbers = [1, 2, 3, 4]; 
+
+    const count = countOccurrences(false, 1); 
+    
+    console.log(count); 
+    }
+catch(e){
+    console.log(e.message);
+}
+
+function countOccurrences(array, searchElement) {
+  // let count = 0; 
+  // for (let element of array)
+  //   if (element === searchElement)
+  //     count++;
+  // return count;
+
+  if(!Array.isArray(array))throw new Error('Value is not an array');
+  return array.reduce((accumulator, current) => {
+    const occurrence = (current === searchElement) ? 1 : 0;
+    console.log(accumulator, current, searchElement);
+    return accumulator + occurrence;
+  }, 0);
+}

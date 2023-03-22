@@ -17,8 +17,7 @@ function App() {
      <About/>
      <Skills/>
      <Projects/>
-     <Work shortContent= "fuck the whole mothafcuking planet"
-     longContent="suck my mothafucking dick you stupid cunt" />
+     <Work/>
      <Contact/>
      </div>
   );
