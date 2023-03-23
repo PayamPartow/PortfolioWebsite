@@ -2,10 +2,11 @@ import React ,{ useState }from 'react'
 import "../index.css";
 
 const ReadmoreReadless = ({shortContent, longContent, longContent2, longContent3, longContent4}) => {
-    const [collapse, setCollapse] = useState(true);
+    const [collapse, setCollapse] = useState(false);
   return (
     <div class = "mt-2 mb-5">
-    {shortContent}
+      <li>{shortContent}</li>
+    
     
         <span className={`long-text ${collapse ? "" : "expanded"}`} class='mr-10'>
             <ul class="marker:text-white ">
