@@ -2,7 +2,7 @@ import React ,{ useState }from 'react'
 import "../index.css";
 
 const ReadmoreReadless = ({shortContent, longContent, longContent2, longContent3, longContent4}) => {
-    const [collapse, setCollapse] = useState(false);
+    const [collapse, setCollapse] = useState(true);
   return (
     <div class = "mt-2 mb-5">
     {shortContent}
