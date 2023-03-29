@@ -3,6 +3,7 @@ import {  useForm } from "react-hook-form";
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState("");
   const {
     register,
     handleSubmit,
@@ -17,19 +18,24 @@ const Contact = () => {
       return;
     }
 
-    // Submit the form data to getform.io
-    const response = await fetch("https://getform.io/f/3ebfe179-4a46-461b-b5f3-676b76e493c3", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
+    try {
+      // Submit the form data to getform.io
+      const response = await fetch("https://getform.io/f/3ebfe179-4a46-461b-b5f3-676b76e493c3", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
 
-    if (response.ok) {
-      setFormSubmitted(true);
-    } else {
-      // Handle errors here
+      if (response.ok) {
+        setFormSubmitted(true);
+      } else {
+        const responseText = await response.text();
+        setFormError(`Failed to submit form. Error message: ${responseText}`);
+      }
+    } catch (error) {
+      setFormError(`Failed to submit form. Error message: ${error.message}`);
     }
   };
 
