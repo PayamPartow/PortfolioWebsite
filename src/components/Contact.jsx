@@ -49,12 +49,32 @@ const Contact = () => {
             <input {...register("name", { required: true, minLength: 3 })}
               id="name"  className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
             {errors.name && <span className="text-red-500">Name is required and should be at least 3 characters long</span>}
-            <input  className='my-4 p-2 bg-[#ccd6f6]' type="text" placeholder='Email' name='email' {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} />
+            <input  
+              className='my-4 p-2 bg-[#ccd6f6]' 
+              type="text" 
+              placeholder='Email' 
+              name='email' 
+              {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} 
+              />
             {errors.email && <span className="text-red-500">Please enter a valid Email</span>}
-            <textarea  className='bg-[#ccd6f6] p-2' name="message"  rows="10" placeholder='Message' {...register("message", { required: true })}></textarea>
+            <textarea  
+              className='bg-[#ccd6f6] p-2' 
+              name="message"  
+              rows="10" 
+              placeholder='Message' 
+              {...register("message", { required: true })}>
+
+              </textarea>
             {errors.message && <span className="text-red-500">Message is required</span>}
-            <button className='text-white border-2 hover:bg-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
-            {formSubmitted && <span className="text-green-500">Thanks for your message!</span>}
+            <button 
+            className='text-white border-2 hover:bg-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>
+              Let's Collaborate
+              </button>
+            {formSubmitted && 
+              <span 
+                className="text-green-500">
+                  Thanks for your message!
+                  </span>}
         </form>
     </div>
   );
