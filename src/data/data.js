@@ -8,7 +8,7 @@ export const data = [
     name: "Tune Pilot: A music discovery webapp",
     image: TunePilot,
     github: "https://github.com/PayamPartow/TunePilot-music-app",
-    live: "",
+    live: "https://effulgent-zuccutto-5a790f.netlify.app/",
   },
   {
     id: 2,
