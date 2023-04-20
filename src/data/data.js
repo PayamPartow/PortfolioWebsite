@@ -1,6 +1,6 @@
 import Swivel from "../assets/Swivel.jpg";
 import Remedi1 from "../assets/iphone.jpg";
-import TunePilot from "../assets/Capture_of_TunePilot.PNG";
+import TunePilot from "../assets/Capture_of_TunePilot.jpg";
 
 export const data = [
   {
